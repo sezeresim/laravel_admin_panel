@@ -6,7 +6,7 @@
         <div class="">
             <div class="page-title">
                 <div class="title_left">
-                    <h3>General Elements</h3>
+                    <h3>Ayarlar</h3>
                 </div>
 
                 <div class="title_right">
@@ -72,8 +72,8 @@
 
                                 <div class="form-group">
                                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                        <button type="submit" class="btn btn-primary">İptal</button>
-                                        <button type="submit" class="btn btn-success">Onayla</button>
+
+                                        <button type="submit" name="general-settings-button" class="btn btn-success">Kaydet</button>
                                     </div>
                                 </div>
 
@@ -82,14 +82,87 @@
 
 
                         <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
-                            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
-                                booth letterpress, commodo enim craft beer mlkshk aliquip</p>
+                            <form  method="post" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Telefon</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="telephone" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Mail</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="last-name" name="general-mail" required="required" class="form-control col-md-7 col-xs-12">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Adres</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="adress">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">İl</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="il">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">İlçe</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="ilce">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+
+                                        <button type="submit" name="contact-settings-button" class="btn btn-success">Kaydet</button>
+                                    </div>
+                                </div>
+
+                            </form>
+
                         </div>
 
 
                         <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
-                            <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
-                                booth letterpress, commodo enim craft beer mlkshk </p>
+                            <form  method="post" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Facebook</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="facebook" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Twitter</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="last-name" name="twitter" required="required" class="form-control col-md-7 col-xs-12">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">İnstagram</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="insta">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Youtube</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="youtube">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+
+                                        <button type="submit" name="social-settings-button" class="btn btn-success">Kaydet</button>
+                                    </div>
+                                </div>
+
+                            </form>
                         </div>
 
 
@@ -100,7 +173,41 @@
 
 
                         <div role="tabpanel" class="tab-pane fade" id="tab_content5" aria-labelledby="profile-tab">
-                            <p>deneme yazısı </p>
+                            <form  method="post" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Kullanıcı Adı</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="facebook" id="username" required="required" class="form-control col-md-7 col-xs-12">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Şifre</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="password" id="last-name" name="password" required="required" class="form-control col-md-7 col-xs-12">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">SMTP HOST</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="smtphost">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">SMTP PORT</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="smtpport">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+
+                                        <button type="submit" name="email-settings-button" class="btn btn-success">Kaydet</button>
+                                    </div>
+                                </div>
+
+                            </form>
                         </div>
 
 
