@@ -18,6 +18,7 @@
 
     <!-- Custom Theme Style -->
     <link href="/backend/build/css/custom.min.css" rel="stylesheet">
+    @yield('css')
 </head>
 
 <body class="nav-md">
@@ -106,6 +107,7 @@
                     </div>
                     <div class="menu_section">
                         <h3>Live On</h3>
+                        <li><a href="/admin/ayarlar"><i class="fa fa-laptop"></i> Ayarlar <span class="label label-success pull-right">Coming Soon</span></a></li>
                         <ul class="nav side-menu">
                             <li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">

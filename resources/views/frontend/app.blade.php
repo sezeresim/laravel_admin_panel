@@ -50,7 +50,7 @@
     <script src="/frontend/vendor/respond/respond.js"></script>
     <script src="/frontend/vendor/excanvas/excanvas.js"></script>
     <![endif]-->
-
+@yield('css')
 </head>
 <body>
 
@@ -78,7 +78,7 @@
                         <a href="about-us.html"><i class="fa fa-angle-right"></i>About Us</a>
                     </li>
                     <li>
-                        <a href="contact-us.html"><i class="fa fa-angle-right"></i>Contact Us</a>
+                        <a href="/iletisim"><i class="fa fa-angle-right"></i>Contact Us</a>
                     </li>
                     <li class="phone">
                         <span><i class="fa fa-phone"></i>(123) 456-7890</span>
@@ -299,7 +299,7 @@
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="contact-us.html">Contact Us - Basic</a></li>
+                                <li><a href="/iletisim">Contact Us - Basic</a></li>
                                 <li><a href="contact-us-advanced.php">Contact Us - Advanced</a></li>
                             </ul>
                         </li>
@@ -423,7 +423,7 @@
 
 <!-- Theme Initialization Files -->
 <script src="/frontend/js/theme.init.js"></script>
-
+@yield('js')
 <!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
 <script type="text/javascript">
 
