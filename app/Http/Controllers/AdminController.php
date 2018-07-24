@@ -19,7 +19,8 @@ class AdminController extends Controller
     }
     public function saveGeneral_Settings(Request $request){
 
-        AdminSetting::create($request->all());
+        unset($request['_token']);
+        AdminSetting::where('id',1)->update($request->all());
         Session::flash('message', "Ayarlar Güncellendi");
         return Redirect::back();
 

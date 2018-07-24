@@ -30,7 +30,7 @@
                 <form  action="/admin/genel-ayarlar" method="POST" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
                     {{csrf_field()}}
 
-//FEEDBACK
+                    <!-- Açıklama -->
                     @if (Session::has('message'))
                         <div class="alert alert-info">{{ Session::get('message') }}</div>
                     @endif
@@ -55,13 +55,13 @@
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Site Başlığı</label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" name="site-title" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                                        <input type="text" name="site-title" id="first-name"  class="form-control col-md-7 col-xs-12">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Site Anahtar Kelimeler </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" id="last-name" name="site-keywords" required="required" class="form-control col-md-7 col-xs-12">
+                                        <input type="text" id="last-name" name="site-keywords"  class="form-control col-md-7 col-xs-12">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -92,13 +92,13 @@
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Telefon</label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" name="telephone" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                                        <input type="text" name="telephone" id="first-name"  class="form-control col-md-7 col-xs-12">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Mail</label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" id="last-name" name="general-mail" required="required" class="form-control col-md-7 col-xs-12">
+                                        <input type="text" id="last-name" name="general-mail"  class="form-control col-md-7 col-xs-12">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -137,13 +137,13 @@
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Facebook</label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" name="facebook" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                                        <input type="text" name="facebook" id="first-name"  class="form-control col-md-7 col-xs-12">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Twitter</label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" id="last-name" name="twitter" required="required" class="form-control col-md-7 col-xs-12">
+                                        <input type="text" id="last-name" name="twitter"  class="form-control col-md-7 col-xs-12">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -181,13 +181,13 @@
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Kullanıcı Adı</label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" name="facebook" id="username" required="required" class="form-control col-md-7 col-xs-12">
+                                        <input type="text" name="facebook" id="username"  class="form-control col-md-7 col-xs-12">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Şifre</label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="password" id="last-name" name="password" required="required" class="form-control col-md-7 col-xs-12">
+                                        <input type="password" id="last-name" name="password"  class="form-control col-md-7 col-xs-12">
                                     </div>
                                 </div>
                                 <div class="form-group">
