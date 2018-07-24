@@ -27,7 +27,15 @@
 
             <div class="x_content">
 
-                <form  method="post" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                <form  action="/admin/genel-ayarlar" method="POST" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                    {{csrf_field()}}
+
+//FEEDBACK
+                    @if (Session::has('message'))
+                        <div class="alert alert-info">{{ Session::get('message') }}</div>
+                    @endif
+
+
                 <div class="" role="tabpanel" data-example-id="togglable-tabs">
                     <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
                         <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Genel Ayarlar</a>
@@ -43,7 +51,6 @@
                     </ul>
                     <div id="myTabContent" class="tab-content">
                         <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
-
 
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Site Başlığı</label>
@@ -73,7 +80,7 @@
                                 <div class="form-group">
                                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
 
-                                        <button type="submit" name="general-settings-button" class="btn btn-success">Kaydet</button>
+                                        <button type="submit"  class="btn btn-success">Kaydet</button>
                                     </div>
                                 </div>
 
@@ -116,7 +123,7 @@
                                 <div class="form-group">
                                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
 
-                                        <button type="submit" name="contact-settings-button" class="btn btn-success">Kaydet</button>
+                                        <button type="submit"  class="btn btn-success">Kaydet</button>
                                     </div>
                                 </div>
 
@@ -155,7 +162,7 @@
                                 <div class="form-group">
                                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
 
-                                        <button type="submit" name="social-settings-button" class="btn btn-success">Kaydet</button>
+                                        <button type="submit"  class="btn btn-success">Kaydet</button>
                                     </div>
                                 </div>
 
@@ -199,7 +206,7 @@
                                 <div class="form-group">
                                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
 
-                                        <button type="submit" name="email-settings-button" class="btn btn-success">Kaydet</button>
+                                        <button type="submit"  class="btn btn-success">Kaydet</button>
                                     </div>
                                 </div>
 

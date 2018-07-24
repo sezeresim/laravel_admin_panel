@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\AdminSetting;
+use Session;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class AdminController extends Controller
 {
@@ -14,4 +17,17 @@ class AdminController extends Controller
 
         return view('backend.admin_settings');
     }
+    public function saveGeneral_Settings(Request $request){
+
+        AdminSetting::create($request->all());
+        Session::flash('message', "Ayarlar Güncellendi");
+        return Redirect::back();
+
+    }
+
+
+
+
+
+
 }

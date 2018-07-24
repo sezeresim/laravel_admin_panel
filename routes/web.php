@@ -22,7 +22,11 @@ Route::group(['prefix'=>'admin'],function (){
 
     Route::get('/', 'AdminController@get_index');
     Route::get('/ayarlar','AdminController@get_settings');
+    Route::post('/genel-ayarlar','AdminController@saveGeneral_Settings');
 });
+
+
+
 Route::get('/iletisim', function () {
     return view('frontend.contact');
 });
