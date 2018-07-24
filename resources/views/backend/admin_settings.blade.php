@@ -27,7 +27,7 @@
 
             <div class="x_content">
 
-
+                <form  method="post" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
                 <div class="" role="tabpanel" data-example-id="togglable-tabs">
                     <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
                         <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Genel Ayarlar</a>
@@ -43,7 +43,7 @@
                     </ul>
                     <div id="myTabContent" class="tab-content">
                         <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
-                            <form  method="post" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+
 
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Site Başlığı</label>
@@ -77,12 +77,10 @@
                                     </div>
                                 </div>
 
-                            </form>
                         </div>
 
 
                         <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
-                            <form  method="post" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Telefon</label>
@@ -122,13 +120,12 @@
                                     </div>
                                 </div>
 
-                            </form>
+
 
                         </div>
 
 
                         <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
-                            <form  method="post" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Facebook</label>
@@ -162,7 +159,7 @@
                                     </div>
                                 </div>
 
-                            </form>
+
                         </div>
 
 
@@ -173,7 +170,6 @@
 
 
                         <div role="tabpanel" class="tab-pane fade" id="tab_content5" aria-labelledby="profile-tab">
-                            <form  method="post" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Kullanıcı Adı</label>
@@ -207,19 +203,18 @@
                                     </div>
                                 </div>
 
-                            </form>
                         </div>
 
 
                     </div>
                 </div>
-
+                </form>
             </div>
         </div>
     </div>
         </div>
     </div>
-    </div>
+
     @endsection
 
 @section('js')

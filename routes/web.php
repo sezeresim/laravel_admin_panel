@@ -14,6 +14,8 @@
 Route::get('/', function () {
     return view('frontend.index');
 });
+Route::post('/kaydet','Controller@ayarla');
+
 
 
 Route::group(['prefix'=>'admin'],function (){

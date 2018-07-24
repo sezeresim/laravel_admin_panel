@@ -2,6 +2,28 @@
 
 
 @section('content')
+
+    <form action="/kaydet" method="POST">
+
+          {{csrf_field()}}
+        Name:<br>
+        <input type="text" name="name" value="Name">
+        <br>
+        Email:<br>
+        <input type="email" name="email" value="Email">
+        <br>
+        Password:<br>
+        <input type="password" name="password"  value="password">
+        <br><br>
+        <input type="submit" value="Submit">
+
+        @if (Session::has('message'))
+            <div class="alert alert-info">{{ Session::get('message') }}</div>
+        @endif
+
+    </form>
+
+
     <div role="main" class="main">
 
         <div class="slider-container">
@@ -446,4 +468,11 @@
 
     </div>
 
+    @endsection
+
+@section('css')
+
+    @endsection
+
+@section('js')
     @endsection
