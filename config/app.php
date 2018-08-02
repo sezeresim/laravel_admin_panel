@@ -179,7 +179,7 @@ return [
 
         //i added packets
         Collective\Html\HtmlServiceProvider::class,
-
+        App\Providers\FormServiceProvider::class,
     ],
 
     /*

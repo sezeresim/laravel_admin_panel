@@ -49,7 +49,6 @@
                         <li role="presentation" class=""><a href="#tab_content5" role="tab" id="profile-tab4" data-toggle="tab" aria-expanded="false">Mail Ayarları</a>
                         </li>
                     </ul>
-                    <div>sasdsa</div>
                     <div id="myTabContent" class="tab-content">
                         <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
 
@@ -179,38 +178,18 @@
 
                         <div role="tabpanel" class="tab-pane fade" id="tab_content5" aria-labelledby="profile-tab">
 
-                                <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Kullanıcı Adı</label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" name="facebook" id="username"  class="form-control col-md-7 col-xs-12">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Şifre</label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="password" id="last-name" name="password"  class="form-control col-md-7 col-xs-12">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">SMTP HOST</label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="smtphost">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">SMTP PORT</label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="smtpport">
-                                    </div>
-                                </div>
 
-                                <div class="form-group">
+                            {{Form::bsText('facebook','Facebook')}}
+                            {{Form::bsText('password','Şifre')}}
+                            {{Form::bsText('smtphost','SMTP HOST')}}
+                            {{Form::bsText('smtpport','SMTP PORT')}}
+
+                            <div class="form-group">
                                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-
                                         <button type="submit"  class="btn btn-success">Kaydet</button>
                                     </div>
                                 </div>
-
+d
                         </div>
 
 
