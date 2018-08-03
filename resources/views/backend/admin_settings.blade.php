@@ -49,34 +49,16 @@
                         <li role="presentation" class=""><a href="#tab_content5" role="tab" id="profile-tab4" data-toggle="tab" aria-expanded="false">Mail Ayarları</a>
                         </li>
                     </ul>
+
                     <div id="myTabContent" class="tab-content">
+                        <!-- Genel Ayarlar -->
                         <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
 
-                                <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Site Başlığı</label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" name="site-title" id="first-name"  class="form-control col-md-7 col-xs-12">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Site Anahtar Kelimeler </label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" id="last-name" name="site-keywords"  class="form-control col-md-7 col-xs-12">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Site Açıklaması</label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="site-description">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Site Adresi</label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="site-adres">
-                                    </div>
-                                </div>
+                            {{Form::bsText('site-title','Site Başlığı')}}
 
+                            {{Form::bsText('site-keywords','Site Anahtar Kelimeler')}}
+                            {{Form::bsText('site-description','Site Açıklaması')}}
+                            {{Form::bsText('site-adres','Site Adresi')}}
                                 <div class="form-group">
                                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
 
@@ -86,78 +68,26 @@
 
                         </div>
 
-
                         <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
-
-                                <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Telefon</label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" name="telephone" id="first-name"  class="form-control col-md-7 col-xs-12">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Mail</label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" id="last-name" name="general-mail"  class="form-control col-md-7 col-xs-12">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Adres</label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="adress">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">İl</label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="il">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">İlçe</label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="ilce">
-                                    </div>
-                                </div>
+                            {{Form::bsText('telephone','Telefon')}}
+                            {{Form::bsText('general-mail','Mail')}}
+                            {{Form::bsText('adress','Adres')}}
+                            {{Form::bsText('il','İl')}}
+                            {{Form::bsText('ilce','İlçe')}}
 
                                 <div class="form-group">
                                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-
                                         <button type="submit"  class="btn btn-success">Kaydet</button>
                                     </div>
                                 </div>
-
-
-
                         </div>
 
 
                         <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
-
-                                <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Facebook</label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" name="facebook" id="first-name"  class="form-control col-md-7 col-xs-12">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Twitter</label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" id="last-name" name="twitter"  class="form-control col-md-7 col-xs-12">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">İnstagram</label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="insta">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Youtube</label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="youtube">
-                                    </div>
-                                </div>
+                            {{Form::bsText('facebook','Facebook')}}
+                            {{Form::bsText('twitter','Twitter')}}
+                            {{Form::bsText('insta','İnstagram')}}
+                            {{Form::bsText('youtube','Youtube')}}
 
                                 <div class="form-group">
                                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
@@ -165,7 +95,6 @@
                                         <button type="submit"  class="btn btn-success">Kaydet</button>
                                     </div>
                                 </div>
-
 
                         </div>
 
@@ -189,7 +118,7 @@
                                         <button type="submit"  class="btn btn-success">Kaydet</button>
                                     </div>
                                 </div>
-d
+
                         </div>
 
 
